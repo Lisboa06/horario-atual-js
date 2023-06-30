@@ -9,7 +9,7 @@ body {
     font-size: large;
     background-color: #04114e;
     text-align: center;
-    background-image: url(imagens/manha1.jpg);
+    background-image: url('imagens/tarde2.jpg');
     min-height: 97.6vh;
     min-width: 95vw;
     backdrop-filter: blur(3px);
@@ -20,14 +20,18 @@ body {
     padding: 10px;
 }
 header {
-    color: antiquewhite;
+    color: #d9d7d4;
     text-align: center;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    text-shadow: 0px 0px 10px #000000c9;
     margin: 15px;
 }
 
-section {
-    background-image: linear-gradient(to bottom, #f4e2c9, #6a5252);
+#sectionPrincipal {
+    /* background-image: linear-gradient(to bottom, #a9873e, #558926); MANHÃ */
+    background-image: linear-gradient(to bottom, #2d4b0c, #a8ba58); /* TARDE */
+    /* background-image: linear-gradient(to bottom, #0d245c, #290d07); MADRUGADA */
+    color: #dff4a9;
+    text-shadow: 0px 0px 5px #0000003c;
     padding: 7px;
     border-radius: 5px;
     width: calc(200px + 40%);
@@ -40,8 +44,10 @@ section > div {
     margin: 8px 0px;
 }
 
-#msg span {
-    color: darkcyan;
+.tempo {
+    color: #ffc629; /* MANHÃ */
+    /* color: #e90909; */ /* TARDE */
+    /* color: darkcyan; */ /* MADRUGADA */
     text-shadow: 0px 0px 10px #0000006f;
     text-decoration: overline;
 }
@@ -80,8 +86,8 @@ footer a {
     width: max-content;
     padding: 7px;
     border-radius: 5px;
-    background-color: #6a5252;
-    color: burlywood;
+    background-color: #150b0b;
+    color: rgb(233, 198, 153);
     text-shadow: 0px 0px 8px #00000096;
     animation: github 1s ease infinite;
     font-style: normal;
@@ -89,9 +95,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     animation: github none;
-}
-footer a:hover::after{
-    content: ' &#x1F517';
 }
 
 @keyframes github {
