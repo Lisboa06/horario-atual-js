@@ -27,7 +27,7 @@ header {
 }
 
 section {
-    background-color: aliceblue;
+    background-image: linear-gradient(to bottom, #f4e2c9, #6a5252);
     padding: 7px;
     border-radius: 5px;
     width: calc(200px + 40%);
@@ -40,6 +40,12 @@ section > div {
     margin: 8px 0px;
 }
 
+#msg span {
+    color: darkcyan;
+    text-shadow: 0px 0px 10px #0000006f;
+    text-decoration: overline;
+}
+
 #foto {
     width: 300px;
     height: 300px;
@@ -47,6 +53,7 @@ section > div {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    box-shadow: 0px 0px 10px #0000009c;
 }
 
 #imagem {
@@ -64,4 +71,35 @@ footer {
     font-style: italic;
     margin: 15px;
     text-shadow: 0px 0px 8px black;
+}
+footer a {
+    text-decoration: none;
+    display: block;
+    margin: 8px auto;
+    border: 1px solid black;
+    width: max-content;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #6a5252;
+    color: burlywood;
+    text-shadow: 0px 0px 8px #00000096;
+    animation: github 1s ease infinite;
+    font-style: normal;
+}
+footer a:hover {
+    text-decoration: underline;
+    animation: github none;
+}
+footer a:hover::after{
+    content: ' &#x1F517';
+}
+
+@keyframes github {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.04;
+    }
 }
