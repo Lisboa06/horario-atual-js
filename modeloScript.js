@@ -24,43 +24,51 @@ function carregar() {
         document.body.style.backgroundImage = "url('imagens/manha1.jpg')"
         minhaSection.style.backgroundImage = "linear-gradient(to bottom, #a9873e, #558926"
         minhaSection.style.color = "#ffc629"
-        for (var i = 0; i < elementos.length; i++) {
-            elementos[i].style.color = '#'; /* Cor do texto TEMPO */
-        }
         hMsg.innerHTML = `Bom dia`
+
+        /* Cor do texto TEMPO - MANHÃ*/
+        for (var i = 0; i < elementos.length; i++) {
+            elementos[i].style.color = '#ffa218'; 
+        } 
     } 
     else if (hora >= 12 && hora < 18) {
         // BOA TARDE
-        img.src = 'imagens/tarde1.jpg'
-        document.body.style.backgroundImage = "url('imagens/tarde1.jpg')"
+        img.src = 'imagens/tarde2.jpg'
+        document.body.style.backgroundImage = "url('imagens/tarde2.jpg')"
         minhaSection.style.backgroundImage = "linear-gradient(to bottom, #2d4b0c, #a8ba58)"
         minhaSection.style.color = "#fff3b2"
-        for (var i = 0; i < elementos.length; i++) {
-            elementos[i].style.color = '#'; /* Cor do texto TEMPO */
-        }
         hMsg.innerHTML = `Boa tarde`
-} 
+
+        /* Cor do texto TEMPO - TARDE*/
+        for (var i = 0; i < elementos.length; i++) {
+            elementos[i].style.color = '#fdc324'; 
+        }
+    } 
     else if (hora >= 18 && hora <= 23) {
         // BOA NOITE
         img.src = 'imagens/noite1.jpg'
         document.body.style.backgroundImage = "url('imagens/noite1.jpg')"
-        minhaSection.style.backgroundImage = "linear-gradient(to bottom,)"
-        for (var i = 0; i < elementos.length; i++) {
-            elementos[i].style.color = '#'; /* Cor do texto TEMPO */
-        }
+        minhaSection.style.backgroundImage = "linear-gradient(to bottom, #2f67a7, #1f170f)"
         hMsg.innerHTML += `Boa noite`
+        minhaSection.style.color = "#b4d2ff"
+
+        /* Cor do texto TEMPO - NOITE*/
+        for (var i = 0; i < elementos.length; i++) {
+            elementos[i].style.color = '#1bb7ff'; 
+        }
     }
     else {
         // BOA MADRUGADA
-        // img.src = 'imagens/meianoite2.jpg'
-        // document.body.style.backgroundImage = "url('imagens/meianoite2.jpg')"
-        // minhaSection.style.backgroundImage = "linear-gradient(to bottom, #0d245c, #290d07)"
-        // minhaSection.style.color = " #bbdddc"
+        img.src = 'imagens/meianoite2.jpg'
+        document.body.style.backgroundImage = "url('imagens/meianoite2.jpg')"
+        minhaSection.style.backgroundImage = "linear-gradient(to bottom, #0d245c, #290d07)"
+        minhaSection.style.color = " #bbdddc"
         hMsg.innerHTML = 'Boa madrugada!'
 
-        // for (var i = 0; i < elementos.length; i++) {
-        // elementos[i].style.color = 'darkcyan'; 
-        // }
+        /* Cor do texto TEMPO - MADRUGADA*/
+        for (var i = 0; i < elementos.length; i++) {
+        elementos[i].style.color = '#32a8a8'; 
+        }
 
         // let hEstilo = document.querySelector('span')
         // hEstilo.classList.add('horaEstilo')

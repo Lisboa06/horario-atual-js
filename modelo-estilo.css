@@ -9,7 +9,7 @@ body {
     font-size: large;
     background-color: #04114e;
     text-align: center;
-    background-image: url('imagens/tarde2.jpg');
+    background-image: url('imagens/manha1.jpg');
     min-height: 97.6vh;
     min-width: 95vw;
     backdrop-filter: blur(3px);
@@ -27,10 +27,16 @@ header {
 }
 
 #sectionPrincipal {
-    /* background-image: linear-gradient(to bottom, #a9873e, #558926); MANHÃ */
-    background-image: linear-gradient(to bottom, #2d4b0c, #a8ba58); /* TARDE */
-    /* background-image: linear-gradient(to bottom, #0d245c, #290d07); MADRUGADA */
-    color: #dff4a9;
+    background-image: linear-gradient(to bottom, #a9873e, #558926); /* MANHÃ */
+    /* background-image: linear-gradient(to bottom, #2d4b0c, #a8ba58); */ /* TARDE */
+    /* background-image: linear-gradient(to bottom, #2f67a7, #1f170f); */ /* NOITE */
+    /* background-image: linear-gradient(to bottom, #0d245c, #290d07); */ /* MADRUGADA */
+
+    color: #ffc629; /* MANHÃ */
+    /* color: #fff3b2; */ /* TARDE */
+    /* color: #b4d2ff; */ /* NOITE */
+    /* color: #32a8a8; */ /* MADRUGADA */
+
     text-shadow: 0px 0px 5px #0000003c;
     padding: 7px;
     border-radius: 5px;
@@ -45,9 +51,10 @@ section > div {
 }
 
 .tempo {
-    color: #ffc629; /* MANHÃ */
-    /* color: #e90909; */ /* TARDE */
-    /* color: darkcyan; */ /* MADRUGADA */
+    color: #ffa218; /* MANHÃ */
+    /* color: #fdc324; */ /* TARDE */
+    /* color: #1bb7ff; */ /* NOITE */
+    /* color: #32a8a8; */ /* MADRUGADA */
     text-shadow: 0px 0px 10px #0000006f;
     text-decoration: overline;
 }
