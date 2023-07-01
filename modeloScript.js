@@ -49,7 +49,7 @@ function carregar() {
         img.src = 'imagens/noite1.jpg'
         document.body.style.backgroundImage = "url('imagens/noite1.jpg')"
         minhaSection.style.backgroundImage = "linear-gradient(to bottom, #2f67a7, #1f170f)"
-        hMsg.innerHTML += `Boa noite`
+        hMsg.innerHTML = `Boa noite`
         minhaSection.style.color = "#b4d2ff"
 
         /* Cor do texto TEMPO - NOITE*/
