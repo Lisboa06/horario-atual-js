@@ -10,7 +10,7 @@ body {
     background-color: #04114e;
     text-align: center;
     background-image: url('imagens/manha1.jpg');
-    min-height: 97.6vh;
+    min-height: 99.6vh;
     min-width: 95vw;
     backdrop-filter: blur(3px);
     background-attachment: fixed;
@@ -40,7 +40,6 @@ header {
     text-shadow: 0px 0px 5px #0000003c;
     padding: 7px;
     border-radius: 5px;
-    width: calc(200px + 40%);
     margin: auto;
     box-shadow: 2px 2px 10px #00000088;
     width: calc(310px + 15%);
